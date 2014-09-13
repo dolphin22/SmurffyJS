@@ -1,8 +1,8 @@
 // Get the package we need
-var express = require('express');
-var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
-var Sensor = require('./models/sensor');
+var express = require('express')
+, mongoose = require('mongoose')
+, bodyParser = require('body-parser')
+, Sensor = require('./models/sensor')
 
 // Create our Express application
 var app = express();
@@ -10,6 +10,7 @@ var app = express();
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
+app.use(bodyParser.json())
 // Use environment defined port or 3005
 var port = process.env.PORT || 3005;
 
