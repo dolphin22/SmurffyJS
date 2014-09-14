@@ -9,8 +9,8 @@ var SensorSchema = new mongoose.Schema({
 	humidity: Number,
 	airspeed: Number,
 	current: Number,
-	zipcode: Number
+	zipcode: String,
 });
 
 // Export the Mongoose model
-module.exports = mongoose.model('Sensor',SensorSchema);
+module.exports = mongoose.model('Sensor', SensorSchema);
