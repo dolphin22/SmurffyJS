@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
 // Create our Express router
 var router = express.Router()
 
-mongoose.connect('mongodb://localhost:27017/smurffy')
+mongoose.connect('mongodb://smurffy:@172.17.0.2:27017/smurffy-production')
 
 // Initial dummy router for testing
 // http://localhost:3001/api
